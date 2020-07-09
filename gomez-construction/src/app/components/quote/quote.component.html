@@ -1,0 +1,53 @@
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+
+<h3>Get a Quote</h3>
+<p>Please allow 24 hours for response</p>
+
+        <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+
+            <div class="field half first">
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="Name" required
+                [(ngModel)]="user.name" #name="ngModel">
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Name is required
+                </div>
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required
+                [(ngModel)]="user.email" #email="ngModel">
+                <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                    Email is required
+                </div>
+            </div>
+            <div class="field half first">
+                <label for="phone">Phone Number</label>
+                <input name="phone" id="phone" type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required
+                [(ngModel)]="user.phone" #phone="ngModel">
+                <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+                    Phone is required
+                </div>
+            </div>
+            <div class="field half">
+                <input style="display: none;" type="file" (change)="onFileSelected($event)" #fileInput>
+                <button (click)="fileInput.click()" class="button alt icon fa-download">{{fileName}}</button>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Please include any other details we should know" required
+                [(ngModel)]="user.message" #message="ngModel"></textarea>
+                <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
+                    Message is required
+                </div>
+            </div>
+            <button class="button alt" type="submit" [disabled]="!userForm.form.valid">Get Quote</button>
+        </form>
+        <div class="copyright">
+            &copy; Gomez Construction & Remodeling.
+        </div>
+
+    </div>
+</footer>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gomez-construction": {
+      "hosting": {
+        "gomez-construction": [
+          "gomez-construction"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "gomez-construction",
+      "public": "dist/gomez-construction",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

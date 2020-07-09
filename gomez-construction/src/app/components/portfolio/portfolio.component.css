@@ -1,0 +1,36 @@
+.portfolio-container{
+    display: grid;
+    grid-template-areas: 'image quote';
+    grid-gap: 200px;
+}
+
+.grid-img{
+    grid-area: image;
+    height: 400px;
+    
+}
+
+.grid-quote {
+    grid-area: quote;
+    padding: 150px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.portfolio-container{
+        display: inline;
+    }
+
+    .grid-img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+
+    .grid-quote{
+        padding: 0;
+    }
+
+}
