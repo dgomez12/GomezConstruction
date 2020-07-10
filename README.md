@@ -1,6 +1,6 @@
 # GomezConstruction
 
-Site developed for Gomez Construction to help their share and grow their business. Check it out at https://gomezconstructionatl.com
+Site developed for Gomez Construction to help them share and grow their business. Check it out at https://gomezconstructionatl.com
 
 ## Technologies used
 
@@ -11,6 +11,7 @@ Site developed for Gomez Construction to help their share and grow their busines
 
  - How to submit files in a form to database and pull attributes from file.
  - How to change domain name.
+ - How to better use CSS.
 
 ## Demo
 ![Demo](Demo/GomezConstructionGif.gif)
