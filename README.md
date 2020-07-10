@@ -13,4 +13,4 @@ Site developed for Gomez Construction to help their share and grow their busines
  - How to change domain name.
 
 ## Demo
-![Demo](Demo/Gomez-Construction-Gif.gif)
+![Demo](Demo/GomezConstructionGif.gif)
